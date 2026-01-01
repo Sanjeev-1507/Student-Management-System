@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="flex justify-center mt-20">
+    <div class="w-3xl p-10 border rounded-xl bg-gray-100 shadow-2xl">
+        <h1 class="text-xl font-medium flex justify-center mb-5 border-b p-1.5">Student Result Protal</h1>
+            <div class="flex gap-20 mb-5">
+                <input type="text" id="name" class="p-3 border-b focus-within:outline" placeholder="Enter Your Name">
+                <input type="number" id="mark" class="p-3 border-b focus-within:outline" placeholder="Enter Your Marks">
+                <button id="addBtn" class="px-4 bg-blue-300 rounded-md cursor-pointer">Result</button>
+            </div>
+
+            <table class="border border-collapse p-2.5 w-full">
+                <thead>
+                        <tr>
+                            <th class="border">Name</th>
+                            <th class="border">Marks</th>
+                            <th class="border">Result</th>
+                            <th class="border">Grade</th>
+                            <th class="border">Action</th>
+                        </tr>
+                </thead>
+                <tbody id="bodyTable" class="m-2.5 p-5"></tbody>
+            </table>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
